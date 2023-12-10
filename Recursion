@@ -1,0 +1,83 @@
+Recursion: when a function calls itself untill a specific condition is met.
+
+
+
+Eg:print name N times using recursion
+#include <iostream>
+
+using namespace std;
+void fun(int i,int n)
+{
+    if(i>n)return;
+    cout<<"Hey Siva!"<<endl;
+    fun(i+1,n);
+}
+int main()
+{
+    int n;
+    cin>>n;
+    fun(1,n);
+
+    return 0;
+}
+
+o/p:
+4
+Hey Siva!
+Hey Siva!
+Hey Siva!
+Hey Siva!
+
+
+Eg: Print Linearly from 1 to N
+
+#include <iostream>
+
+using namespace std;
+void fun(int i,int n)
+{
+    if(i>n)return;
+    cout<<i<<endl;
+    fun(i+1,n);
+}
+int main()
+{
+    int n;
+    cin>>n;
+    fun(1,n);
+
+    return 0;
+}
+o/p:
+4
+1
+2
+3
+4
+
+
+
+Eg: print N to 1
+#include <iostream>
+
+using namespace std;
+void fun(int i,int n)
+{
+    if(i<1)return;
+    cout<<i<<endl;
+    fun(i-1,n);
+}
+int main()
+{
+    int n;
+    cin>>n;
+    fun(n,n);
+
+    return 0;
+}
+o/p:
+4
+4
+3
+2
+1
